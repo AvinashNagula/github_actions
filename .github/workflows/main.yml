@@ -37,5 +37,5 @@ jobs:
       - name: Push image
         if: github.event_name == 'push'
         run: |
-          docker tag sample-node-app sample-node-app:latest
-          docker push sample-node-app:latest
+          docker tag sample-node-app avinashnagula/sample-node-app:latest
+          docker push avinashnagula/sample-node-app:latest
